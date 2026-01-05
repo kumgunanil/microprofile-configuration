@@ -1,0 +1,65 @@
+quarkus:
+  datasource:
+    db-kind: mysql
+    username: root
+    password: root
+    jdbc:
+      url: jdbc:mysql://localhost:3306/student_db
+  hibernate-orm:
+    log:
+      sql: true
+    database:
+      generation: drop-and-create
+
+  http:
+    port: 8088
+
+interest_rate: 70
+CEO: "Anil Kumar"
+branch_list: Varanasi, Sarnath, Jalhupur, Pandeypur
+#
+#profiles:
+#  local:
+#    quarkus:
+#      http:
+#        port: 8089
+#      datasource:
+#        username: root
+#    CEO: "Varsha Jaiswal"
+
+  #mvn -Dquarkus-profile=local compile quarkus:dev
+
+
+
+#%local.quarkus.http.port=8089
+#%local.CEO="Varsha Jaiswal"
+#%local.quarkus.datasource.username=root
+
+
+#varanasi_interest_rate: 40
+#sarnath_interest_rate: 30
+#jalhupur_interest_rate: 20
+#pandeypur_interest_rate: 40
+
+#quarkus.http.port=8088
+
+#
+##Datasource configuration
+#quarkus.datasource.db-kind=mysql
+#quarkus.datasource.username=root
+#quarkus.datasource.password=root
+#
+#quarkus.datasource.jdbc.url=jdbc:mysql://localhost:3306/student_db
+#quarkus.hibernate-orm.log.sql=true
+#quarkus.hibernate-orm.database.generation=drop-and-create
+##quarkus.hibernate-orm.database.generation=none
+#
+#interest_rate=70
+#CEO="Anil Kumar";
+#branch_list=Varanasi, Sarnath, Jalhupur, Pandeypur
+#
+#varanasi_interest_rate=40
+#sarnath_interest_rate=30
+#jalhupur_interest_rate=20
+#pandeypur_interest_rate=40
+#
